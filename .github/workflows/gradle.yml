@@ -27,6 +27,9 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
+        
+    - name: Clear Gradle Cache
+      run: ./gradlew clean
 
     # Configure Gradle for optimal use in GiHub Actions, including caching of downloaded dependencies.
     # See: https://github.com/gradle/actions/blob/main/setup-gradle/README.md
